@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронный магазин</title>
+    <style> .container { position: relative; width: 300px; height: 100px; background-color: #FFFFFF; cursor: pointer; }
+    .hidden-blocks { display: none; position: absolute; top: 100%; left: 0; right: 0; padding-top: 20px; background-color: #FFFFFF; }
+     /* Показываем скрытый блок при наведении */ .container:hover > .hidden-blocks { display: block; }
+    </style>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Электронный магазин</h5>
+    <nav class="ms-5">
+        <a class="p-2 btn btn-outline-primary" href="main.html">Главная</a>
+        <a class="p-2 btn btn-outline-primary" href="catalog.html">Каталог товаров</a>
+        <a class="p-2 btn btn-outline-primary" href="settings.html">Настройки</a>
+    </nav>
+</div>
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="card-title pricing-card-title">Каталог</h1>
+    <p class="lead">Список товаров</p>
+</div>
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="container">
+                    <h2 style="color: #1E90FF">Товар 4</h2>
+
+                    <div class="hidden-blocks">
+                        <p>Маленькая</p>
+                        <button type="button" class="btn btn-outline-secondary">200х400</button>
+                        <p>Средняя</p>
+                        <button type="button" class="btn btn-outline-secondary">400х600</button>
+                        <p>Большая</p>
+                        <button type="button" class="btn btn-outline-secondary">600х800</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="container">
+                    <h2 style="color: #1E90FF">Товар 5</h2>
+
+                    <div class="hidden-blocks">
+                        <p>Дерево</p>
+                        <button type="button" class="btn btn-outline-secondary">300ъ400</button>
+                        <p>Пластик</p>
+                        <button type="button" class="btn btn-outline-secondary">500х500</button>
+                        <p>Металл</p>
+                        <button type="button" class="btn btn-outline-secondary">200х300</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card mb-4 box-shadow">
+                <div class="container">
+                    <h2 style="color: #1E90FF">Товар 6</h2>
+
+                    <div class="hidden-blocks">
+                        <p>ПНД чёрный</p>
+                        <button type="button" class="btn btn-outline-secondary">10 л</button>
+                        <p>ПНД синий</p>
+                        <button type="button" class="btn btn-outline-secondary">15 л</button>
+                        <p>ПВД прозрачный</p>
+                        <button type="button" class="btn btn-outline-secondary">60 л</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</div>
