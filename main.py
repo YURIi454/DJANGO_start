@@ -14,10 +14,10 @@ class MyServer(BaseHTTPRequestHandler):
     paths = {
         "GET":
             {
-                "main": root_dir + "/main.html",
-                "settings": root_dir + "/settings.html",
-                "catalog": root_dir + "/catalog.html",
-                "pay": root_dir + "/pay.html"
+                "/main": root_dir + "/main.html",
+                "/settings": root_dir + "/settings.html",
+                "/catalog": root_dir + "/catalog.html",
+                "/pay": root_dir + "/pay.html"
             }
     }
 
@@ -31,7 +31,7 @@ class MyServer(BaseHTTPRequestHandler):
         if self.path in paths:
             url_pt = paths[self.path]
         else:
-            url_pt = paths["main"]
+            url_pt = paths["/main"]
 
         with open(url_pt, mode="r", encoding="UTF-8") as file:
             self.wfile.write(bytes(file.read().encode()))
